@@ -1,4 +1,4 @@
-import Title from './Title'
+import { Title } from './Title'
 
 interface LayoutProps {
     titulo: string
@@ -24,4 +24,4 @@ const Layout = (props: LayoutProps) => {
 
 }
 
-export default Layout;
+export { Layout };

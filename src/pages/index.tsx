@@ -1,4 +1,4 @@
-import Layout from "../components/Layout";
+import { Layout } from "../components/Layout";
 
 const Home = () => {
   return (
@@ -19,4 +19,4 @@ const Home = () => {
   )
 }
 
-export default Home;
+export { Layout };

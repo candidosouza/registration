@@ -1,6 +1,16 @@
 import { Layout } from "../components/Layout";
+import { Table } from "../components/Table";
+import { Client } from "../core/Client";
 
 const Home = () => {
+
+  const clients = [
+    new Client('Candido', 42, '777'),
+    new Client('Felipe', 8, '777'),
+    new Client('Vitor', 64, '777'),
+    new Client('Helena', 63, '777'),
+  ]
+
   return (
     <div className={`
       flex 
@@ -13,10 +23,10 @@ const Home = () => {
       text-white
     `}>
         <Layout titulo="Cadastro Simples">
-          <span>Conteúdo</span>
+          <Table clients={clients}></Table>
         </Layout>
     </div>
   )
 }
 
-export { Layout };
+export default Home;

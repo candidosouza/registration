@@ -8,7 +8,10 @@ interface TableProps {
 
 const Table = (props: TableProps) => {
     return (
-        <table>
+        <table className={`
+            w-full
+            rounded-xl overflow-hidden
+        `}>
             <thead>
                 <Head />
             </thead>
